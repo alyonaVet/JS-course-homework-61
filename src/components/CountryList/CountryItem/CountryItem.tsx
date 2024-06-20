@@ -3,12 +3,13 @@ import {ListItem, ListItemButton, ListItemText} from '@mui/material';
 
 interface CountryItemProps {
   name: string;
+  onClick: React.MouseEventHandler;
 }
 
-const CountryItem: React.FC<CountryItemProps> = ({name}) => {
+const CountryItem: React.FC<CountryItemProps> = ({name, onClick}) => {
   return (
     <ListItem  component="div" disablePadding>
-      <ListItemButton>
+      <ListItemButton onClick={onClick}>
         <ListItemText primary={name} />
       </ListItemButton>
     </ListItem>

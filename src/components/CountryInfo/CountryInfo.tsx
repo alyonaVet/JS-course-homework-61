@@ -29,8 +29,8 @@ const CountryInfo: React.FC<CountryInfoProps> = ({country, neighbours}) => {
     <Container
       sx={{
         width: '100%',
-        height: 'auto',
-        bgcolor: 'background.paper',
+        height: 550,
+        bgcolor: '#f5f5f5',
         overflowY: 'auto',
         border: '1px solid lightgrey',
         borderRadius: 1,

@@ -1,12 +1,10 @@
-import './App.css';
+import CountriesBox from './containers/CountriesBox/CountriesBox';
 
 const App = () => {
 
   return (
-    <>
-    Hello, world!
-    </>
-  )
+    <CountriesBox />
+  );
 };
 
 export default App;

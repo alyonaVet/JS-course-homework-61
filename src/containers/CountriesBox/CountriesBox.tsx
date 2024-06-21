@@ -6,7 +6,6 @@ import axios from 'axios';
 import {NAME_URL, NAMES_URL} from '../../constans';
 import CountryInfo from '../../components/CountryInfo/CountryInfo';
 
-
 const CountriesBox = () => {
 
   const [countries, setCountries] = useState<CountryItemType[]>([]);
@@ -21,7 +20,6 @@ const CountriesBox = () => {
     }
   );
   const [neighbours, setNeighbours] = useState<NeighbourType[]>([]);
-
 
   const fetchCountries = useCallback(async () => {
     const {data: countries} = await axios.get<ApiCountry[]>(NAMES_URL);
@@ -83,8 +81,6 @@ const CountriesBox = () => {
       </Box>
       <CountryInfo country={country} neighbours={neighbours}/>
     </Stack>
-
-
   );
 };
 

@@ -9,6 +9,11 @@ export interface CountryInfoType {
   population: number;
   borders: Array<string>;
   flag: string;
+  region: string;
+}
+
+export interface NeighbourType {
+  name: string;
 }
 
 export interface ApiCountry {
@@ -18,30 +23,30 @@ export interface ApiCountry {
 }
 
 export interface ApiCountryInfo {
-  "name": string;
-  "topLevelDomain": Array<string>;
-  "alpha2Code": string;
-  "alpha3Code": string;
-  "callingCodes": Array<string>;
-  "capital": string;
-  "altSpellings": Array<string>;
-  "subregion": string;
-  "region": string;
-  "population": number;
-  "latlng": Array<string>;
-  "demonym": string;
-  "area": number;
-  "gini": number;
-  "timezones": Array<string>;
-  "borders": Array<string>;
-  "nativeName": string;
-  "numericCode": string;
-  "flags": Record<string, string>;
-  "currencies": Array<string>;
-  "languages": Array<string>;
-  "translations": Record<string, string>;
-  "flag": string;
-  "regionalBlocs": Array<string>;
-  "cioc": string;
-  "independent": boolean;
+  name: string;
+  topLevelDomain: Array<string>;
+  alpha2Code: string;
+  alpha3Code: string;
+  callingCodes: Array<string>;
+  capital: string;
+  altSpellings: Array<string>;
+  subregion: string;
+  region: string;
+  population: number;
+  latlng: Array<string>;
+  demonym: string;
+  area: number;
+  gini: number;
+  timezones: Array<string>;
+  borders: Array<string>;
+  nativeName: string;
+  numericCode: string;
+  flags: Record<string, string>;
+  currencies: Array<string>;
+  languages: Array<string>;
+  translations: Record<string, string>;
+  flag: string;
+  regionalBlocs: Array<string>;
+  cioc: string;
+  independent: boolean;
 }

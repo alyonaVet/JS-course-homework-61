@@ -47,7 +47,7 @@ const CountryInfo: React.FC<CountryInfoProps> = ({country, neighbours}) => {
           component="img"
           src={country.flag}
           alt={`${country.name} flag`}
-          sx={{width: '200px', height: 'auto'}}
+          sx={{width: 'auto', height: '150px'}}
         />
       </Stack>
 
@@ -57,13 +57,13 @@ const CountryInfo: React.FC<CountryInfoProps> = ({country, neighbours}) => {
           {neighbours.length > 0 && (
             neighbours.map((neighbour, index) => (
               <ListItem key={index}>
-                <ListItemText primary={neighbour.name}/>
+                <ListItemText primary={`- ${neighbour.name}`} />
               </ListItem>
             ))
           )}
           {neighbours.length === 0 && (
             <ListItem>
-              <ListItemText primary={'No borders'}/>
+              <ListItemText primary={'No borders'} />
             </ListItem>)}
         </List>
       </Box>
